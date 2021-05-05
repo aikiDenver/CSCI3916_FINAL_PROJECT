@@ -17,7 +17,7 @@ mongoose.set('useCreateIndex', true);
 var ItemSchema = new Schema({
     item_name: {type: String, required:true},
     price:{type:Number, required:true},
-    country_blacklist:[{country_code: String}],
+    countryCode:{countryCode: String},
     item_id:{type: String, required: true},
     imageUrl:{type:String, required: true}
 });
